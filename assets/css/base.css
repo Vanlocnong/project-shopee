@@ -1,0 +1,142 @@
+:root{
+    --white-color: #fff;
+    --black-color: black;
+    --text-color: #333;
+    --primary-color: rgb(247,69,47);
+}
+
+*{
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    list-style: 1.6rem;
+    font-family: Arial,sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 1000vh;
+    background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+/* 
+RESPONSIVE */
+
+.grid{
+    width: 1130px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.grid__full-width{
+    width: 100%;
+}
+
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+
+
+.grid__column__2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__column__10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
+}
+
+
+.grid__column__2-4{
+    
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 20%;
+}
+
+/* MODAL */
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    display: none;
+    animation: fadein linear 0.3s;
+    
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.modal__body{
+    --growth-from: 0;
+    --growth-to: 100%;
+    background-color: white;
+    margin: auto;
+    z-index: 1;    
+    border-radius: 3px;
+    animation: growth linear 0.3s;
+    
+    
+}
+
+
+
+@keyframes growth{
+    from{
+        transform: scale(var(--growth-from));
+
+    }
+
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
+
+
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes translatey{
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-10px);
+
+    }
+}
+
+.boxshadow{
+    box-shadow: 4px 5px 9px -4px black;s
+}
