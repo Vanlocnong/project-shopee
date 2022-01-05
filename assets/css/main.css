@@ -1368,11 +1368,12 @@
     color: rgba(0, 0, 0, 0.462);
     user-select: none;
     cursor: text;
+    font-size: 2rem;
 }
 
 .footer__support__items{
-    font-size: 1rem;
-    color: rgba(0, 0, 0, 0.462);
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.531);
     margin-top: 10px;
 }
 
@@ -1383,5 +1384,41 @@
 .footer__support__about-shopee{
     list-style: none;
     padding-left:0;
-    margin-left: 30px;
+    margin-left: 80px;
 }
+
+
+
+/* FOLLOW */
+
+.footer__follow{
+    
+    padding-left: 0;
+    margin-left: 60px;
+    width: 420px;
+    height: 280px;
+    
+    text-align: center;
+}
+
+.footer__follow__socials{
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 80px;
+}
+
+.footer__follow__icon{
+    font-size: 6rem;
+    color: rgba(0, 0, 0, 0.703);
+    /* color: var(--primary-color); */
+    cursor: pointer;
+    transition: 0.2s;
+    transition-delay: 0.1s;
+}
+
+.footer__follow__icon:hover{
+    transform: translateY(-30px) rotate(-15deg);
+    
+    
+}
+
